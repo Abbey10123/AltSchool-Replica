@@ -1,0 +1,23 @@
+.container {
+    height: 100vh;
+    background-image: url(../assets/images/12.jpg);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-size: 70%;  
+}
+.tablemargin{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+@media(max-width:768px){
+    .container{
+        background-image: url('../assets/images/12.jpg');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 700px 
+    }
+    .tablemargin{
+        margin: 0;
+        width: 100%;
+    }
+}

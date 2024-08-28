@@ -1,0 +1,162 @@
+
+.container {
+    border: 0.063rem solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow:auto;
+    margin: 0;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+   
+}         
+.boxx{
+    border: 0.18rem solid rgb(248, 245, 241);
+    width: 40%;
+    background-color: rgb(248, 245, 241);
+    flex: 1;
+    text-align: center;
+    height: 100vh;
+}
+
+.textstyle{
+    font-family: AlmarenaDisplayBold, sans-serif;
+    color: #000812;
+    font-size: 3.1875rem;
+    text-align: center;
+    font-weight: bold;
+}
+.boxx footer{
+   margin-top: 0;
+}
+.imagewidth{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.imagewidth img{
+    margin-top: 5%;
+    width: 60%;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.boxx2{
+    padding: 3rem;
+    flex: 1;
+    width: 70%;
+    height: 80vh; 
+    overflow-y: scroll; 
+
+}
+.formgrid{
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    gap: 1rem;
+}
+.formgrid div{
+    display: flex;
+    flex-direction: column;
+}
+.formtextarea{
+    width:15rem; 
+    height: 4rem; 
+    border-style: none;
+    background-color: rgb(235, 235, 235); 
+    opacity: 30%
+}
+.formtextarealong{
+    opacity:30% ; 
+    width: 30rem; 
+    height: 4rem; 
+    border-color: rgb(235, 235, 235); 
+    background-color: rgb(235, 235, 235)
+}
+.button{
+    background-color: rgb(106, 106, 207); 
+    padding: 20px; 
+    font-style: normal; 
+    font-size: x-large;
+    border: 2px solid rgb(106, 106, 207); 
+    width: 36rem;
+}
+
+@media (max-width:768px){
+    .container{
+    border: 0.063rem solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow:auto;
+    margin: 0;
+    padding: 1rem;
+}
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: auto;
+   
+}         
+.boxx{
+    display: none;
+}
+.boxx2{
+    display: table-column;
+    padding: 0.625rem;
+    width: 100%;
+    height: 80vh; 
+    overflow-y: scroll; 
+}
+.formgrid{
+    display: block;
+    grid-template-columns: repeat(2, 0.1fr);
+    gap: 1rem;
+}
+.formgrid div{
+    display: flex;
+    flex-direction: column;
+}
+.formtextarea{
+    width: auto; 
+    height: 4rem; 
+    border-style: none;
+    background-color: rgb(235, 235, 235); 
+    opacity: 30%
+}
+.formtextarea#dob{
+    width: 100%;
+}
+.formtextarealong{
+    opacity:30% ; 
+    width: 100%; 
+    height: 4rem; 
+    border-color: rgb(235, 235, 235); 
+    background-color: rgb(235, 235, 235)
+}
+.button{
+    background-color: rgb(106, 106, 207); 
+    padding: 20px; 
+    font-style: normal; 
+    font-size: x-large;
+    border: 2px solid rgb(106, 106, 207); 
+    width:100%;
+}
+.flexbox::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/images/images.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+}
